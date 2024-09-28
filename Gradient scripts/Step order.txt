@@ -1,0 +1,12 @@
+1. Offset radius 	- Increase the radius of the points without changing the angular position, useful for when wrapping from the outside
+		 	- Better to run before downsampling for slightly better radius calculation etc.
+
+2. Downsample 	 	- Reduce the number of points on the curve, speeds up operations in solidworks
+
+(2.5. gradient cleaner) - Removes points lying very close together, these points can cause problems
+			- Usually not needed if curve has been downsampled
+
+3. Shift gradient 	- Shift the gradient along an axis.
+
+4. Flatten gradient 	- Flattens the gradient, use offset angle to shift the position of the curve in-plane
+
